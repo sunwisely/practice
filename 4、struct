@@ -1,0 +1,27 @@
+/* this is also a practice for struct 
+ *2022/9/6
+ zhiyang*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+  struct people{
+    char name[10];
+    short age;
+    short height;
+    short weight;
+    char personality[10];
+    
+  };
+int main(void){
+  char na=0;
+  scanf("please input your name:%c\n",&na);
+  struct people zc={"zhangchi",19,156,95,"irritable"};
+  strcpy(zc.name,"zc");
+  /*change the character 'name'*/
+  struct people*one=&zc;
+  printf("%s\n""%d\n""%d\n""%d\n""%s\n",one->name,one->age,one->height,one->weight,one->personality);
+  return EXIT_SUCCESS;
+  
+}
