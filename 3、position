@@ -1,0 +1,14 @@
+/*this is a practice for the 'position'
+ *2022/9/5
+ zhiyang*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+  int a = 10;
+  int*p=&a;
+  printf("%p\n",p);
+  *p=20;
+  printf("%d\n",a);
+  return EXIT_SUCCESS;
+}
