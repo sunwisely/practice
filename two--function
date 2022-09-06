@@ -1,0 +1,21 @@
+/*this is my second practice
+ *2022/9/2
+ zhiyang */
+#include <stdio.h>
+#include <stdlib.h>
+
+int Add(int x , int y)
+{
+  int z=0;
+  z=x+y;
+  return z;
+}
+int main(void){
+  int num=0;
+  int num2=0;
+  int Num=0;
+  scanf("%d",&num);
+  Num=Add(num,num2);
+  printf("%d",Num);
+  return EXIT_SUCCESS;
+}
