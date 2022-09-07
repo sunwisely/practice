@@ -1,0 +1,20 @@
+/*the use of the break
+ *2022/9/6
+ zhiyang*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+  int x=0;
+  scanf("%d",&x);
+  switch(x){
+  case 1:
+  case 2:
+  case 3: printf("1<=x<=3");break;
+  case 4:
+  case 5: printf("4<=x<=5");break;
+  default: printf("5<x<=10");
+  }
+  return EXIT_SUCCESS;
+}
