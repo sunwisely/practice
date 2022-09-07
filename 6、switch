@@ -1,0 +1,26 @@
+/*study the use of switch to make a simple calculating
+ *2022/9/6
+ zhiyang*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+  int a=1;
+  int b=2;
+  char op;
+  int res;
+  printf("res=a op b\n");
+  scanf("op=%c\n",&op);
+  switch(op){
+    case '+' : res=a+b;break;
+    case '-' : res=a-b;break;
+    case '*' :res =a*b;break;
+	  case '/' :if (b!=0) res =a/b;
+    else fprintf(stderr,"div par 0\n");
+	  break;
+	  default :fprintf(stderr,"op inconnu\n");
+  }
+  printf("%d\n",res);
+  return EXIT_SUCCESS;
+}
